@@ -17,75 +17,32 @@
 </head>
 
 <body>
-	<div class="header_panel">
-		<span>This is header</span>
-	</div>
-	<div class="main_panel">
-		<div class="operation_panel">
-			<div class="operator_panel">
-				<div class="order">
-					<div class="variable_selection">▼ 选区</div>
-					<div class="variable_selection unset">合并选区</div>
-					<div class="variable_selection unset">选区相减</div>
-					<div class="variable_selection unset">选区相交</div>
-					<div class="variable_selection unset">反选</div>
-					&NewLine;
-					<div class="variable_attribute">▼ 属性</div>
-					<div class="variable_attribute unset">色相</div>
-					<div class="variable_attribute unset">饱和度</div>
-					<div class="variable_attribute unset">明度</div>
-					<div class="variable_attribute unset">对比度</div>
-				</div>
-			</div>
-			<div class="order_panel">
-				<div class="order">
-					1. 
-					<div class="variable_order">
-						将
-						<div class="variable_attribute unset">
-							&lt;属性&gt;
-						</div>
-						设置为
-						<div>
-							<div>
-								原来的值
-							</div>
-							+
-							<div class="variable_value value_constant number">
-								10
-							</div>
-						</div>
-					</div>
-					2. 
-					<div class="variable_order">
-						选择
-						<div class="variable_selection">
-							合并
-							<div class="variable_selection unset">
-								&lt;选区&gt;
-							</div>
-							与
-							<div class="variable_selection unset">
-								&lt;选区&gt;
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="image_panel">
-			<div class="preimage_panel">
-
-			</div>
-			<span class="process_panel">&equals;&gt;</span>
-			<div class="aftimage_panel">
-
-			</div>
-		</div>
-	</div>
-	<div class="footer_panel">
-		<span>Footer panel</span>
-	</div>
+	<table width="100%" cellspacing="0" cellpadding="0" height="100%">
+		<tr height="100px">
+			<td class="header_panel">This is header</td>
+		</tr>
+		<tr>
+			<td class="main_panel">
+				<table width="100%" cellspacing="0" cellpadding="0" height="100%">
+					<tr>
+						<td class="image_panel" width="100% - 500px">
+							<table width="100%" cellspacing="0" cellpadding="0" height="100%">
+								<tr>
+									<td border="2px solid" width="45%"></td>
+									<td>&equals;&gt;</td>
+									<td border="2px solid" width="45%"></td>
+								</tr>
+							</table>
+						</td>
+						<td class="operation_panel" width="500px">This is Operation panel</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr height="50px">
+			<td class="footer_panel"> This is footer</td>
+		</tr>
+	</table>
 </body>
 
 </html>

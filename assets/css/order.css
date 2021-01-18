@@ -1,0 +1,42 @@
+.order * {
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+
+	margin-top: 10px;
+	margin-left: 9px;
+	margin-right: 9px;
+	margin-bottom: 10px;
+
+	border: 2px solid;
+	border-radius: 5px;
+}
+
+.order .variable_order {
+	background-color: #fafafa;
+}
+
+.order .variable_attribute {
+	background-color: mistyrose;
+	color: brown;
+}
+
+.order .variable_value {
+	background-color: honeydew;
+	color: darkgreen;
+}
+
+.order .variable_selection {
+	background-color: cornsilk;
+	color: peru;
+}
+
+.order .variable_color {
+	background-color: aliceblue;
+	color: royalblue;
+}
+
+.order .unset {
+	border: 2px dashed;
+}

@@ -14,18 +14,22 @@
 	<meta name="description" content="轻量便捷的图片批量处理工具">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>图片运算器</title>
+
+	<script>
+		require("./assets/js/DragAndDrop")
+	</script>
 </head>
 
 <body>
 	<table width="100%" cellspacing="0" cellpadding="0" height="100%">
-		<tr height="100px">
+		<tr height="100">
 			<td class="header_panel">This is header</td>
 		</tr>
 		<tr>
 			<td class="main_panel">
 				<table width="100%" cellspacing="0" cellpadding="0" height="100%">
 					<tr>
-						<td class="image_panel" width="100% - 500px">
+						<td class="image_panel">
 							<table width="100%" cellspacing="0" cellpadding="0" height="100%">
 								<tr>
 									<td border="2px solid" width="45%"></td>
@@ -34,12 +38,52 @@
 								</tr>
 							</table>
 						</td>
-						<td class="operation_panel" width="500px">This is Operation panel</td>
+						<td class="operator_panel" width="120" height="100%">
+							<div class="order order_list">
+								<div class="variable_selection draggable" draggable="true">合并选区</div>
+								<div class="variable_selection draggable" draggable="true">选区相减</div>
+								<div class="variable_selection draggable" draggable="true">选区相交</div>
+								<div class="variable_selection draggable" draggable="true">反选</div>
+
+								<div class="variable_attribute draggable" draggable="true">色相</div>
+								<div class="variable_attribute draggable" draggable="true">饱和度</div>
+								<div class="variable_attribute draggable" draggable="true">明度</div>
+								<div class="variable_attribute draggable" draggable="true">亮度</div>
+								<div class="variable_attribute draggable" draggable="true">对比度</div>
+
+								<div class="variable_value draggable" draggable="true">属性的值</div>
+								<div class="variable_value draggable" draggable="true">运算</div>
+							</div>
+						</td>
+						<td class="order_panel" width="400" height="100%">
+							<ol class="order">
+								<li>
+									<div class="order_text">将</div>
+									<div class="variable_attribute unset">&lt;属性&gt;</div><br/>
+									<div class="order_text">设置为</div>
+									<div class="variable_value">
+										<div class="variable_value">原来的值</div>
+										<div class="order_text operator">+</div>
+										<div class="variable_value value_constant number">10</div>
+									</div>
+								</li>
+								<li>
+									<div class="order_text">选择</div>
+									<div class="variable_selection">
+										<div class="order_text order_text">合并</div>
+										<div class="variable_selection unset">&lt;选区&gt;</div>
+										<div class="order_text order_text">与</div>
+										<div class="variable_selection unset">&lt;选区&gt;</div>
+									</div>
+									<div class="order_text">...</div>
+								</li>
+							</ol>
+						</td>
 					</tr>
 				</table>
 			</td>
 		</tr>
-		<tr height="50px">
+		<tr height="50">
 			<td class="footer_panel"> This is footer</td>
 		</tr>
 	</table>

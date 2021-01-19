@@ -1,21 +1,40 @@
 .order * {
-	padding-top: 2px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-bottom: 2px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
 
-	margin-top: 10px;
-	margin-left: 9px;
-	margin-right: 9px;
-	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
 
 	border: 2px solid;
-	border-radius: 5px;
+	border-radius: 10px;
+
+	text-align: left;
+	word-wrap: normal;
+	word-break: normal;
 }
 
-.order .variable_order {
-	background-color: #fafafa;
+.order .order_text {
+	border: 0px;
+	/* margin-left: 0px;
+	margin-right: 0px; */
+	padding: 0px;
 }
+
+.order .operator {
+	font-size: 30px;
+}
+
+.order_panel > .order div {
+	display: inline-block;
+}
+
+/* .order .variable_order {
+	background-color: #fafafa;
+} */
 
 .order .variable_attribute {
 	background-color: mistyrose;

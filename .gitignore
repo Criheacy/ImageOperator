@@ -2,6 +2,8 @@
 /build
 /out
 
+/design
+
 npm-debug.log*
 
 *.psd
